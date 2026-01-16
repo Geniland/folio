@@ -1,148 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <title>Personal Portfolio #06 | AsmrProg</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HANTO Ahlonko Landry | Développeur Full Stack Web & Mobile</title>
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0f172a;color:#e5e7eb;line-height:1.8}
+    a{text-decoration:none;color:inherit}
+
+    nav{display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background:#020617;position:sticky;top:0;z-index:10}
+    nav .logo{display:flex;align-items:center;gap:12px;font-weight:600;font-size:18px}
+    nav img{width:42px}
+
+    .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;padding:110px 80px}
+    .hero h1{font-size:46px;color:#38bdf8}
+    .hero h1 span{color:#fff}
+    .hero p{margin-top:25px;font-size:16px;color:#cbd5f5}
+    .hero img{width:100%;max-width:400px;border-radius:26px;box-shadow:0 30px 80px rgba(56,189,248,.25)}
+
+    section{padding:90px 80px}
+    .section-title{font-size:30px;margin-bottom:45px;color:#38bdf8}
+
+    .about{max-width:900px}
+
+    .skills,.experience,.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+    .card{background:#020617;padding:28px;border-radius:22px;transition:.3s}
+    .card:hover{transform:translateY(-8px);box-shadow:0 25px 50px rgba(0,0,0,.45)}
+    .card h3{margin-bottom:12px;color:#fff}
+
+    .project a{display:inline-block;margin-top:12px;color:#38bdf8;font-weight:500}
+
+    footer{text-align:center;padding:50px;background:#020617}
+    footer .socials i{font-size:28px;margin:0 12px;cursor:pointer;transition:.3s}
+    footer .socials i:hover{color:#38bdf8}
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;text-align:center}
+      nav,section,.hero{padding:40px}
+    }
+  </style>
 </head>
-
 <body>
-    <style>
-        .main {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            text-align: center;
-        }
 
-        .info {
-            display: inline-block;
-            text-align: left;
-        }
-    </style>
+<nav>
+  <div class="logo">
+    <img src="assets/logo.png" alt="logo">
+    <span>GeniCodex</span>
+  </div>
+</nav>
 
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.png">
-            <a href="#">Genidesign</a>
-        </div>
-        <div class="nav-links">
-           
-        </div>
-    </nav>
+<div class="hero">
+  <div>
+    <h1 id="name">Développeur <span>Full Stack</span> Web & Mobile</h1>
+    <p>
+      Développeur web et mobile basé au Togo, spécialisé dans la conception, le développement et le déploiement de solutions digitales modernes.
+      J’interviens sur des projets complets : API sécurisées, plateformes web dynamiques, applications mobiles, systèmes de paiement et solutions géolocalisées.
+      Habitué à travailler sur des projets à portée locale et internationale disposant d un certificat PMI de gestion de projet de projet de bout en bout.
+    </p>
+  </div>
+  <img src="assets/profile.jpeg" alt="profile">
+</div>
 
-    <div class="main">
-        <div class="info">
-            <h1 id="namePlaceholder">Hello, Moi c'est HANTO Landry Web Developper & Designer</h1>
-            <p>je suis un developpeur full stack, avec des connaissance en graphisme. Chaque ligne de code que 
-                j'écris et chaque pixel que je dessine sont le fruit d'une passion pour l'innovation et d'un engagement
-                 envers l'excellence. Si vous cherchez un professionnel polyvalent capable de transformer 
-                vos idées en réalité numérique, je suis prêt à relever le défi</p>
-        </div>
-        <img src="assets/profile.jpeg">
-    </div>
+<section>
+  <h2 class="section-title">À propos</h2>
+  <div class="about">
+    <p>
+      Je suis un développeur full stack passionné par l’innovation et la création de solutions numériques à forte valeur ajoutée avec plus de 3 anneés d'expérience.
+      J’ai travaillé sur des projets variés allant des plateformes de microfinance aux applications de gestion, en passant par des systèmes de paiement,
+      des plateformes de vente de cryptomonnaies et des applications mobiles intégrant la géolocalisation.
+    </p>
+    <p>
+      J’ai collaboré avec une structure américaine disposant d’une affiliation au Togo (Micro Finance Pro), où j’ai participé au développement,
+      à la maintenance et à l’amélioration de solutions web professionnelles répondant à des exigences internationales.
+    </p>
+  </div>
+</section>
 
-    <div class="recent">
-        <div class="header">
-            <h4>Langage Back-End</h4>
-            <!-- <a href="blog.html">View all</a> -->
-        </div>
-        <div class="posts">
-            <div class="post-item">
-                <h3>PHP</h3>
-                <div class="info">
-                    <h5>Jan 2023</h5>
-                    <h5>|</h5>
-                    <h5>Framework Symfony / Laravel</h5>
-                </div>
-                
-            </div>
-            <div class="post-item">
-                <h3>Python</h3>
-                <div class="info">
-                    <h5>Mars 2023</h5>
-                    <h5>|</h5>
-                    <h5>Framework Django</h5>
-                </div>
-               
-            </div>
-        </div>
-    </div>
+<section>
+  <h2 class="section-title">Compétences techniques</h2>
+  <div class="skills">
+    <div class="card"><h3>Backend</h3><p>PHP (Laravel dernière version), API REST, Laravel Sanctum, authentification, rôles & permissions, gestion de transactions, uploads de fichiers, sécurité et performance.</p></div>
+    <div class="card"><h3>Frontend</h3><p>Vue.js, JavaScript, HTML5, CSS3, Bootstrap, dashboards dynamiques, UX/UI moderne, animations et interfaces responsives.</p></div>
+    <div class="card"><h3>Mobile</h3><p>Flutter, Mapbox, Google Maps, géolocalisation en temps réel, autocomplétion d’adresses, calculs dynamiques de distance et de prix.</p></div>
+    <div class="card"><h3>Systèmes & outils</h3><p>Git/GitHub, Postman, serveurs Linux, ISPConfig, Vercel, déploiement en production, tests API.</p></div>
+    <div class="card"><h3>Finance & paiements</h3><p>Intégration de TMoney, Flooz, Orange Money, suivi de transactions, plateformes de vente et d’achat de cryptomonnaies.</p></div>
+  </div>
+</section>
 
-    <div class="separator">
-        <h4>Competences</h4>
-    </div>
+<section>
+  <h2 class="section-title">Expériences & réalisations</h2>
+  <div class="experience">
+    <div class="card"><h3>Micro Finance Pro</h3><p>Participation au développement et à la maintenance de solutions web pour la microfinance, support technique, amélioration continue des plateformes internes et respect de standards professionnels internationaux.</p></div>
+    <div class="card"><h3>Projets indépendants</h3><p>Conception complète de plateformes web et mobiles : auto-école digitale, chat en temps réel, systèmes de gestion, applications financières et solutions blockchain.</p></div>
+  </div>
+</section>
 
-    <div class="featured">
-        <div class="item">
-            <img src="assets/item-1.jpg">
-            <div class="details">
-                <h3>Langage Front-end & Framework</h3>
-                <div class="item-info">
-                    <div class="year-badge">2023</div>
-                    <h4>JavaScript , HTML4 , CSS , Flutter , VueJS</h4>
-                </div>
-                <p>Niveau Avance.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="assets/Kickoff-Badge.png">
-            <div class="details">
-                <h3>Geston de Projet</h3>
-                <div class="item-info">
-                    <div class="year-badge">2023</div>
-                    <h4>de Bout en Bout</h4>
-                </div>
-                <p>Niveau Avance.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="assets/item-3.jpg">
-            <div class="details">
-                <h3>Suite Adobe , Photoshop , UI/UX design...</h3>
-                <div class="item-info">
-                    <div class="year-badge">2024</div>
-                    <h4>UI Design</h4>
-                </div>
-                <p>Niveau intermediaire.</p>
-            </div>
-        </div>
-    </div>
+<section>
+  <h2 class="section-title">Projets récents</h2>
+  <div class="projects">
+    <div class="card project"><h3>EGETRACO</h3><p>Site corporate professionnel avec design moderne et navigation optimisée.</p><a href="https://egetraco.com" target="_blank">Voir le projet →</a></div>
+    <div class="card project"><h3>SYDMAF</h3><p>Plateforme de services avec présentation claire des activités.</p><a href="https://sydmaf.com" target="_blank">Voir le projet →</a></div>
+    <div class="card project"><h3>Digital Areas</h3><p>Agence digitale : développement web, API et solutions numériques vote en ligne.</p><a href="https://digitalareas.com" target="_blank">Voir le projet →</a></div>
+    <div class="card project"><h3>SIKA Industrie</h3><p>Site industriel corporate orienté performance et crédibilité basé en cote d'ivoire.</p><a href="https://sika-industrie.com" target="_blank">Voir le projet →</a></div>
+  </div>
+</section>
 
-    <footer>
-        <div class="socials">
-            <i class='bx bxl-facebook-square'></i>
-            <i class='bx bxl-instagram'></i>
-            <i class='bx bxl-twitter'></i>
-            <i class='bx bxl-linkedin-square'></i>
-        </div>
-        <p>Copyright ©2024, All rights reserved.</p>
-    </footer>
+<section>
+  <h2 class="section-title">Langues</h2>
+  <div class="skills">
+    <div class="card"><h3>Français</h3><p>Courant</p></div>
+    <div class="card"><h3>Anglais</h3><p>Professionnel et technique</p></div>
+    <div class="card"><h3>Éwé</h3><p>Langue locale (Togo)</p></div>
+  </div>
+</section>
 
-    <script>
-    const nameText = "HANTO Ahlonko Landry";
-    const namePlaceholder = document.getElementById("namePlaceholder");
+<footer>
+  <div class="socials">
+    <i class='bx bxl-facebook'></i>
+    <i class='bx bxl-linkedin'></i>
+    <i class='bx bxl-github'></i>
+  </div>
+  <p>© 2026 HANTO Ahlonko Landry – Développeur Full Stack Web & Mobile</p>
+</footer>
 
-    anime.timeline({ loop: false })
-        .add({
-            targets: '#namePlaceholder',
-            opacity: [0, 1],
-            easing: "easeInOutQuad",
-            duration: 1200
-        })
-        .add({
-            targets: '#namePlaceholder',
-            html: [nameText],
-            easing: "easeInOutQuad",
-            duration: 1500
-        });
+<script>
+  anime({targets:'#name',opacity:[0,1],translateY:[20,0],duration:1200,easing:'easeOutExpo'})
 </script>
 
 </body>
-
 </html>
